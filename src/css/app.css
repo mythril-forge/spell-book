@@ -95,6 +95,14 @@ input[type='color' i] {
 	height: calc(6vh + 60px);
 }
 
+#gitproof {
+	position: absolute;
+	bottom: calc(2vh + 16px);
+	right: calc((2vw + 16px)*1.5);
+	width: calc((6vw + 60px)/2);
+	height: calc((6vh + 60px)/2);
+}
+
 /* placeholder app css */
 
 .app {
