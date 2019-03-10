@@ -1,3 +1,5 @@
+![MIT Logo](https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg)
+
 # MIT License
 > Copyright (c) 2019 Nolan Kovacik
 
