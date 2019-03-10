@@ -1,6 +1,6 @@
 {
-  "name": "spell-book",
-  "jsx": true,
-  "redux": false,
-  "styleExt": "css"
+	"name": "spell-book",
+	"jsx": true,
+	"redux": false,
+	"styleExt": "css"
 }
