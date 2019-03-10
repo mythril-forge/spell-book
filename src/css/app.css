@@ -1,6 +1,27 @@
+/* fonts */
+
+@font-face {
+	font-family: 'Homemade Apple';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Homemade Apple Regular'), local('HomemadeApple-Regular'), url(https://fonts.gstatic.com/s/homemadeapple/v9/Qw3EZQFXECDrI2q789EKQZJob0x6XHgOiJM6.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* variables */
+:root {
+	--bloodthirst-red: #80303A;
+	--accursed-green: #8ABA62;
+	--crimson-roses: #8F1F19;
+	--sickly-light: #DADAAD;
+	--forest-grey: #809797;
+	--dead-black: #1E1E30;
+}
+
 /* primary css */
 
 body {
+	background-color: var(--dead-black);
 	margin: 0;
 	padding: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -23,6 +44,27 @@ button,
 	border-style: solid;
 	border-radius: 0.5em;
 	border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+	background-color: whitesmoke;
+}
+
+#hero:before {
+	background: url('../img/hero.jpg');
+	background-size: cover;
+	background-position-x: 50%;
+	background-position-y: 30%;
+
+	content: "";
+	position: fixed;
+	z-index: -1;
+	width: calc(100vw - 1vw - 2vh/3);
+	height: calc(100vh  - 1vw - 2vh/3);
+
+	--blur-size: calc((3vw + 2vh)/12);
+	-webkit-filter: blur(var(--blur-size));
+	-moz-filter: blur(var(--blur-size));
+	-o-filter: blur(var(--blur-size));
+	-ms-filter: blur(var(--blur-size));
+	filter: blur(var(--blur-size));
 }
 
 #hero {
@@ -38,6 +80,18 @@ button,
 #hero > * {
 	width: fit-content;
 	text-decoration: none;
+}
+
+#hero h1 {
+	font-family: 'Homemade Apple'
+}
+
+#brandproof {
+	position: absolute;
+	top: 0;
+	right: calc(2vw + 16px);
+	width: calc(6vw + 60px);
+	height: calc(6vh + 60px);
 }
 
 /* placeholder app css */
