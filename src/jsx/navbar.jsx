@@ -9,8 +9,7 @@ class Navbar extends Component {
 	render() {
 		return (
 			<span>
-				<Link><span>My Spellbooks</span></Link>
-				<Link><span></span></Link>
+				Navbar
 			</span>
 		)
 	}

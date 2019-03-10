@@ -1,8 +1,8 @@
 // import react modules
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // import components
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Splash from './splash.jsx'
 import Spellbooks from './spellbooks.jsx'
 

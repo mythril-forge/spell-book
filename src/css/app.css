@@ -14,18 +14,30 @@ code {
 
 /* splash css */
 
+button,
+.button {
+	cursor: pointer;
+	user-select: none;
+	color: black;
+	padding: 0.25em 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+}
+
 #hero {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	align-self: center;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
 
 #hero > * {
-	background-color: whitesmoke;
 	width: fit-content;
+	text-decoration: none;
 }
 
 /* placeholder app css */
