@@ -12,7 +12,7 @@ const Splash = () => {
 			<div id='hero'>
 				<img id='brandproof' src={logoSmall} alt='D&amp;D 5e'/>
 				<h1>Lost&emsp;Arts</h1>
-				<Link to='./books'><span tabIndex='0' className='button'>Craft Spellbook</span></Link>
+				<Link to='./books/new'><span tabIndex='0' className='button'>Craft Spellbook</span></Link>
 			</div>
 		</div>
 	)
