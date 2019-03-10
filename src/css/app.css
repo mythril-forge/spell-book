@@ -1,3 +1,5 @@
+/* primary css */
+
 body {
 	margin: 0;
 	padding: 0;
@@ -9,6 +11,24 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+/* splash css */
+
+#hero {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#hero > * {
+	background-color: whitesmoke;
+	width: fit-content;
+}
+
+/* placeholder app css */
 
 .app {
 	text-align: center;

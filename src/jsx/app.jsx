@@ -1,26 +1,17 @@
+// import react modules
 import React, { Component } from 'react'
-import logo from '../img/logo.svg'
+
+// import components
+import Splash from './splash.jsx'
+
+// import other local assets
 import '../css/app.css'
 
+// define component item
 class App extends Component {
 	render() {
 		return (
-			<div className='app'>
-				<header className='app-header'>
-					<img src={logo} className='app-logo' alt='logo' />
-					<p>
-						Edit <code>src/app.jsx</code> and save to reload.
-					</p>
-					<a
-						className='app-link'
-						href='https://reactjs.org'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Learn React
-					</a>
-				</header>
-			</div>
+			<Splash />
 		)
 	}
 }
