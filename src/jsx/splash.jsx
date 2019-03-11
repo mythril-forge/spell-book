@@ -4,7 +4,7 @@ import React from 'react'
 import { BrowserRouter as Route, Link } from 'react-router-dom'
 
 // import other local assets
-import logoSmall from '../img/logo-small.svg'
+import dndSmall from '../img/dnd-small.svg'
 import octocat from '../img/octocat.svg'
 
 // define component item
@@ -23,7 +23,7 @@ const Splash = () => {
 				</a>
 
 				<a href='http://dnd.wizards.com/dungeons-and-dragons/what-is-dd'>
-					<img className='brandproof' src={logoSmall} alt='for d&amp;d 5e' />
+					<img className='brandproof' src={dndSmall} alt='for d&amp;d 5e' />
 				</a>
 			</div>
 

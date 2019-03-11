@@ -7,9 +7,9 @@ import { BrowserRouter as Link } from 'react-router-dom'
 class Navbar extends Component {
 	render() {
 		return (
-			<span>
+			<nav>
 				Navbar
-			</span>
+			</nav>
 		)
 	}
 }
