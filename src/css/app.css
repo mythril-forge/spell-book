@@ -124,10 +124,6 @@ input[type='color' i] {
 	right: calc(1vw + 10px);
 }
 
-.proof:hover {
-	opacity: 1;
-}
-
 .dnd.proof{
 	top: calc((2vh + 20px)/2);
 }
@@ -135,6 +131,18 @@ input[type='color' i] {
 .git.proof {
 	bottom: calc((2vh + 20px)/2);
 }
+
+.dnd.proof:hover {
+	opacity: 1;
+	filter: drop-shadow(0 0 1em var(--crimson-rose))
+}
+
+.git.proof:hover {
+	opacity: 1;
+	filter: drop-shadow(0 0 1em whitesmoke)
+}
+
+
 
 /* placeholder app css */
 

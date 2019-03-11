@@ -21,7 +21,7 @@ const ShowSpellbook = () => {
 				<li>Green Flame</li>
 				<li>Eldritch Blast</li>
 			</ul>
-			<Link to='/books/new' tabIndex='0' className='button'>Edit Spellbook</Link>
+			<Link to='/books/000/edit' tabIndex='0' className='button'>Edit Spellbook</Link>
 		</div>
 	)
 }
