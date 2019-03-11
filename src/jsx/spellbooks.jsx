@@ -13,7 +13,7 @@ const Spellbooks = () => {
 			<Navbar />
 			<h1>Spellbook Library</h1>
 			<ul>
-				<li><Link to='/books/000'>Starlow Birdbrain</Link></li>
+				<li><Link to='/books/000'>Starlow Wierdword</Link></li>
 				<li><Link to='/books/000'>Fiora Hellsword</Link></li>
 				<li><Link to='/books/000'>Zoltan Bluebeard</Link></li>
 			</ul>
