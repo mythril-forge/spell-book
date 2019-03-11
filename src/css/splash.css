@@ -1,0 +1,81 @@
+#hero {
+	background: url('../img/hero.jpg');
+	background-size: cover;
+	background-position-x: 50%;
+	background-position-y: 30%;
+
+	z-index: -1;
+	position: absolute;
+	width: calc(100vw - 1vw - 2vh/3);
+	height: calc((100vh  - 1vw - 2vh/3) - 56px);
+	top: calc((1vw + 2vh/3)/2);
+	left: calc((1vw + 2vh/3)/2);
+
+	--blur-size: calc((3vw + 2vh)/12);
+	-webkit-filter: blur(var(--blur-size));
+	-moz-filter: blur(var(--blur-size));
+	-o-filter: blur(var(--blur-size));
+	-ms-filter: blur(var(--blur-size));
+	filter: blur(var(--blur-size));
+}
+
+#home {
+	position: relative;
+	height: calc(100vh - 56px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#info {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+
+	padding: 0 0.75em;
+	height: 56px;
+	width: calc(100vw - 1.5em);
+	top: calc(100vh - 56px);
+}
+
+#info > * {
+	margin: 0 0.125em
+}
+
+#info > span {
+	flex-grow: 1
+}
+
+.social-media {
+	color: white;
+	background: cadetblue;
+	text-decoration: none;
+	border-radius: 0.5em;
+	padding: 0.25em 0.75em;
+}
+
+.facebook.social-media {
+	background: #3C5A99;
+}
+.twitter.social-media{
+	background: #1DA1F2;
+}
+
+.logo {
+	position: absolute;
+	opacity: 0.75;
+	height: calc(5vh + 50px);
+	width: calc(5vw + 50px);
+	right: calc(1vw + 10px);
+	filter: drop-shadow(0 0 0.5em black);
+}
+
+.dnd.logo { top: calc((2vh + 20px)/2); }
+.git.logo { bottom: calc((2vh + 20px)/2); }
+.dnd.logo:hover { opacity: 1; }
+.git.logo:hover { opacity: 1; }
+.dnd.logo:active { filter: drop-shadow(0 0 1em var(--crimson-rose)); }
+.git.logo:active { filter: drop-shadow(0 0 1em whitesmoke); }

@@ -11,6 +11,7 @@ import { faDAndD } from '@fortawesome/free-brands-svg-icons'
 
 // import components
 import Splash from './splash.jsx'
+import About from './about.jsx'
 import Spellbooks from './spellbooks.jsx'
 import NewSpellbook from './spellbooks-new.jsx'
 import ShowSpellbook from './spellbooks-show.jsx'
@@ -18,6 +19,7 @@ import EditSpellbook from './spellbooks-edit.jsx'
 
 // import other local assets
 import '../css/app.css'
+import '../css/app-root.css'
 
 // init font-awesome assets
 library.add(faFacebookF)
@@ -32,6 +34,7 @@ class App extends Component {
 			<Router>
 				<div>
 					<Route exact path='/' component={Splash} />
+					<Route exact path='/about' component={About} />
 					<Route exact path='/books' component={Spellbooks} />
 					<Route exact path='/books/new' component={NewSpellbook} />
 					<Route exact path='/books/000' component={ShowSpellbook} />

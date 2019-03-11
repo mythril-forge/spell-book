@@ -1,50 +1,27 @@
-/* variables */
-
-:root {
-	--deathly-dark: #1E1E30;
-	--bloodthirsty: #80303A;
-	--crimson-rose: #CD2B1E;
-	--sickly-light: #DADAAD;
-	--cursed-green: #8ABA62;
-	--dimlit-green: #809797;
-}
-
-/* font imports */
-
-@font-face {
-	font-family: 'Goudy Bookletter 1911';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Goudy Bookletter 1911'), local('GoudyBookletter1911'), url(https://fonts.gstatic.com/s/goudybookletter1911/v8/sykt-z54laciWfKv-kX8krex0jDiD2HbY6IJshzWRYEHAQ.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 /* primary css */
-html {
-	height: 100%;
-	background: var(--deathly-dark);
+
+html, body {
+	margin: 0;
+	padding: 0;
 }
 
 body {
+	background-color: var(--deathly-dark);
 	color: var(--sickly-light);
-	height: 100vh;
-	margin: 0;
-	padding: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
+code, pre, samp {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-
 /* font properties */
 
-h1,h2,h3 {
+h1, h2, h3 {
 	font-family: 'Goudy Bookletter 1911';
-	text-shadow: 0 0 3px #1E1E30;
+	text-shadow: 0 0 3px var(--deathly-dark)
 }
 
 /* splash css */
@@ -63,125 +40,4 @@ input[type='color' i] {
 	border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
 	background-color: whitesmoke;
 	text-decoration: none;
-}
-
-#hero {
-	background: url('../img/hero.jpg');
-	background-size: cover;
-	background-position-x: 50%;
-	background-position-y: 30%;
-
-	z-index: -1;
-	position: absolute;
-	width: calc(100vw - 1vw - 2vh/3);
-	height: calc((100vh  - 1vw - 2vh/3) - 56px);
-	top: calc((1vw + 2vh/3)/2);
-	left: calc((1vw + 2vh/3)/2);
-
-	--blur-size: calc((3vw + 2vh)/12);
-	-webkit-filter: blur(var(--blur-size));
-	-moz-filter: blur(var(--blur-size));
-	-o-filter: blur(var(--blur-size));
-	-ms-filter: blur(var(--blur-size));
-	filter: blur(var(--blur-size));
-}
-
-#home {
-	position: relative;
-	height: calc(100vh - 56px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-#info {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-
-	padding: 0 0.75em;
-	height: 56px;
-	width: calc(100vw - 1.5em);
-	top: calc(100vh - 56px);
-}
-
-
-#info > * {
-margin: 0 0.125em
-}
-
-#info > span {
-	flex-grow: 1
-}
-
-.social-media {
-	color: white;
-	background: cadetblue;
-	text-decoration: none;
-	border-radius: 0.5em;
-	padding: 0.25em 0.75em;
-}
-
-.facebook.social-media {
-	background: #3C5A99;
-}
-.twitter.social-media{
-	background: #1DA1F2;
-}
-
-
-.logo {
-	position: absolute;
-	opacity: 0.75;
-	height: calc(5vh + 50px);
-	width: calc(5vw + 50px);
-	right: calc(1vw + 10px);
-	filter: drop-shadow(0 0 0.5em black);
-}
-
-.dnd.logo { top: calc((2vh + 20px)/2); }
-.git.logo { bottom: calc((2vh + 20px)/2); }
-.dnd.logo:hover { opacity: 1; }
-.git.logo:hover { opacity: 1; }
-.dnd.logo:active { filter: drop-shadow(0 0 1em var(--crimson-rose)); }
-.git.logo:active { filter: drop-shadow(0 0 1em whitesmoke); }
-
-
-/* placeholder app css */
-
-.app {
-	text-align: center;
-}
-
-.app-logo {
-	animation: App-logo-spin infinite 20s linear;
-	height: 40vmin;
-	pointer-events: none;
-}
-
-.app-header {
-	background: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.app-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
 }

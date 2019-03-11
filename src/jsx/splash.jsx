@@ -5,6 +5,7 @@ import { BrowserRouter as Route, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // import other local assets
+import '../css/splash.css'
 import dndAmp from '../img/dnd-amp.svg'
 import github from '../img/github.svg'
 
