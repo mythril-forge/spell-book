@@ -1,10 +1,14 @@
 // import react modules
 import React from 'react'
 
+// import components
+import Navbar from './navbar.jsx'
+
 // define component item
 const NewSpellbook = () => {
 	return (
 		<div>
+			<Navbar />
 			<h1>Spellbook</h1>
 			<h2>Lorem Ipsum</h2>
 			<ul>

@@ -1,6 +1,7 @@
 // import react modules
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 // import components
 import Splash from './splash.jsx'

@@ -1,26 +1,33 @@
-/* fonts */
+/* variables */
+
+:root {
+	--deathly-dark: #1E1E30;
+	--bloodthirsty: #80303A;
+	--crimson-rose: #CD2B1E;
+	--sickly-light: #DADAAD;
+	--cursed-green: #8ABA62;
+	--dimlit-green: #809797;
+}
+
+/* font imports */
 
 @font-face {
-	font-family: 'Homemade Apple';
+	font-family: 'Goudy Bookletter 1911';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Homemade Apple Regular'), local('HomemadeApple-Regular'), url(https://fonts.gstatic.com/s/homemadeapple/v9/Qw3EZQFXECDrI2q789EKQZJob0x6XHgOiJM6.woff2) format('woff2');
+	src: local('Goudy Bookletter 1911'), local('GoudyBookletter1911'), url(https://fonts.gstatic.com/s/goudybookletter1911/v8/sykt-z54laciWfKv-kX8krex0jDiD2HbY6IJshzWRYEHAQ.woff2) format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* variables */
-:root {
-	--bloodthirst-red: #80303A;
-	--accursed-green: #8ABA62;
-	--crimson-roses: #8F1F19;
-	--sickly-light: #DADAAD;
-	--forest-grey: #809797;
-	--dead-black: #1E1E30;
+/* primary css */
+html {
+	height: 100%;
+	background: var(--deathly-dark);
 }
 
-/* primary css */
-
 body {
+	color: var(--sickly-light);
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -32,33 +39,47 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+
+/* font properties */
+
+h1,h2,h3 {
+	font-family: 'Goudy Bookletter 1911';
+	text-shadow: 0 0 3px #1E1E30;
+}
+
 /* splash css */
 
 button,
 .button,
 input[type='color' i] {
+	font: inherit;
 	cursor: pointer;
 	user-select: none;
-	color: black;
+	color: var(--deathly-dark);
 	padding: 0.25em 1em;
 	border-style: solid;
 	border-radius: 0.5em;
 	border-width: 0.125em;
 	border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
 	background-color: whitesmoke;
+	text-decoration: none;
 }
 
-#hero:before {
+#hero {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+
 	background: url('../img/hero.jpg');
 	background-size: cover;
 	background-position-x: 50%;
 	background-position-y: 30%;
 
-	content: "";
-	position: fixed;
 	z-index: -1;
 	width: calc(100vw - 1vw - 2vh/3);
 	height: calc(100vh  - 1vw - 2vh/3);
+	top: calc((1vw + 2vh/3)/2);
+	left: calc((1vw + 2vh/3)/2);
 
 	--blur-size: calc((3vw + 2vh)/12);
 	-webkit-filter: blur(var(--blur-size));
@@ -68,42 +89,50 @@ input[type='color' i] {
 	filter: blur(var(--blur-size));
 }
 
-#hero {
-	width: 100vw;
-	height: 100vh;
+#home {
+	position: relative;
+	height: calc(100vh - 56px);
 	display: flex;
-	align-self: center;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	justify-content: center;
 }
 
-#hero > * {
-	width: fit-content;
-	text-decoration: none;
+#info {
+	padding: 0 2em 0 2em;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+
+	align-items: flex-end;
+	justify-content: space-between;
+	height: 56px;
+	top: calc(100vh - 56px);
+	width: calc(100vw - 4em);
+	background: linear-gradient(to bottom, rgba(30,30,48,0) 0%,rgba(30,30,48,1) 25%,rgba(30,30,48,1) 100%);
 }
 
-#hero h1 {
-	font-family: 'Homemade Apple'
+#info * {
+	flex-grow: 20vw;
 }
 
 .brandproof {
 	position: absolute;
-	top: calc((2vh + 20px)/2);
-	right: calc((2vw + 20px)/2);
+	opacity: 0.75;
 	width: calc(5vw + 50px);
 	height: calc(5vh + 50px);
-	padding: calc((1vh + 10px)/2);
+	top: calc((2vh + 20px)/2);
+	right: calc((2vw + 20px)/2);
 
 }
 
 .gitproof {
 	position: absolute;
+	opacity: 0.75;
+	width: calc((5vw + 50px));
+	height: calc((5vh + 50px));
 	bottom: calc((2vh + 20px)/2);
 	right: calc((2vw + 20px)/2);
-	width: calc((4vw + 40px));
-	height: calc((4vh + 40px));
-	padding: calc((1vh + 10px)/1);
 }
 
 /* placeholder app css */
