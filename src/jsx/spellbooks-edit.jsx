@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Redirect } from 'react-router-dom'
 import Navbar from './navbar.jsx'
 
 // define component item
-class NewSpellbook extends Component {
+class EditSpellbook extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
@@ -16,7 +16,7 @@ class NewSpellbook extends Component {
 	}
 
 	handleSubmit = () => {
-		this.setState({redirect: '/books'})
+		this.setState({redirect: '/books/000'})
 	}
 
 	render () {
@@ -28,7 +28,7 @@ class NewSpellbook extends Component {
 		return (
 			<div>
 				<Navbar />
-				<h1>New Spellbook</h1>
+				<h1>Edit Spellbook</h1>
 				<form>
 					<div>
 						<label htmlFor='name'>Character Name</label><br />
@@ -67,4 +67,4 @@ class NewSpellbook extends Component {
 	}
 }
 
-export default NewSpellbook
+export default EditSpellbook

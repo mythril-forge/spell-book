@@ -8,6 +8,7 @@ import Splash from './splash.jsx'
 import Spellbooks from './spellbooks.jsx'
 import NewSpellbook from './spellbooks-new.jsx'
 import ShowSpellbook from './spellbooks-show.jsx'
+import EditSpellbook from './spellbooks-edit.jsx'
 
 // import other local assets
 import '../css/app.css'
@@ -22,6 +23,7 @@ class App extends Component {
 					<Route exact path='/books' component={Spellbooks} />
 					<Route exact path='/books/new' component={NewSpellbook} />
 					<Route exact path='/books/000' component={ShowSpellbook} />
+					<Route exact path='/books/000/edit' component={EditSpellbook} />
 				</div>
 			</Router>
 		)

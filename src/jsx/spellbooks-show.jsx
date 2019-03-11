@@ -1,11 +1,13 @@
 // import react modules
 import React from 'react'
+// eslint-disable-next-line no-unused-vars
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 // import components
 import Navbar from './navbar.jsx'
 
 // define component item
-const NewSpellbook = () => {
+const ShowSpellbook = () => {
 	return (
 		<div>
 			<Navbar />
@@ -19,9 +21,9 @@ const NewSpellbook = () => {
 				<li>Green Flame</li>
 				<li>Eldritch Blast</li>
 			</ul>
-			<button>Edit Spellbook</button>
+			<Link to='/books/new' tabIndex='0' className='button'>Edit Spellbook</Link>
 		</div>
 	)
 }
 
-export default NewSpellbook
+export default ShowSpellbook
