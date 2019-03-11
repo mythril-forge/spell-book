@@ -116,23 +116,24 @@ input[type='color' i] {
 	flex-grow: 20vw;
 }
 
-.brandproof {
+.proof {
 	position: absolute;
 	opacity: 0.75;
-	width: calc(5vw + 50px);
 	height: calc(5vh + 50px);
-	top: calc((2vh + 20px)/2);
-	right: calc((2vw + 20px)/2);
-
+	width: calc(5vw + 50px);
+	right: calc(1vw + 10px);
 }
 
-.gitproof {
-	position: absolute;
-	opacity: 0.75;
-	width: calc((5vw + 50px));
-	height: calc((5vh + 50px));
+.proof:hover {
+	opacity: 1;
+}
+
+.dnd.proof{
+	top: calc((2vh + 20px)/2);
+}
+
+.git.proof {
 	bottom: calc((2vh + 20px)/2);
-	right: calc((2vw + 20px)/2);
 }
 
 /* placeholder app css */

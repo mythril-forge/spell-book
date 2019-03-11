@@ -19,11 +19,11 @@ const Splash = () => {
 				<Link to='./books' tabIndex='0' className='button'>Get Started</Link>
 
 				<a href='https://github.com/noltron000/spell-book'>
-					<img className='gitproof' src={octocat} alt='made with github' />
+					<img className='git proof' src={octocat} alt='made with github' />
 				</a>
 
 				<a href='http://dnd.wizards.com/dungeons-and-dragons/what-is-dd'>
-					<img className='brandproof' src={dndSmall} alt='for d&amp;d 5e' />
+					<img className='dnd proof' src={dndSmall} alt='for d&amp;d 5e' />
 				</a>
 			</div>
 
