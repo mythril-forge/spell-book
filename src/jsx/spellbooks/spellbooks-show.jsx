@@ -11,15 +11,26 @@ const ShowSpellbook = () => {
 	return (
 		<div className='base'>
 			<Navbar />
-			<h1>Spellbook</h1>
-			<h2>Lorem Ipsum</h2>
+			<h1>Zoltan Bluebeard</h1>
 			<ul>
-				<li>Firebolt</li>
-				<li>Fireball</li>
-				<li>Ice Sphere</li>
-				<li>Iceball</li>
-				<li>Green Flame</li>
-				<li>Eldritch Blast</li>
+				<Link to='/spells/000'>
+					<li>
+						<h3>Fireball</h3>
+						<p>Tier 3 Evocation</p>
+					</li>
+				</Link>
+				<Link to='/spells/000'>
+					<li>
+						<h3>Eldritch Blast</h3>
+						<p>Tier 0 Evocation</p>
+					</li>
+				</Link>
+				<Link to='/spells/000'>
+					<li>
+						<h3>Cure Wounds</h3>
+						<p>Tier 1 Evocation</p>
+					</li>
+				</Link>
 			</ul>
 			<Link to='/books/000/edit' tabIndex='0' className='button'>Edit Spellbook</Link>
 		</div>

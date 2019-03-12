@@ -13,11 +13,30 @@ const Spellbooks = () => {
 			<Navbar />
 			<h1>Spellbook Library</h1>
 			<ul>
-				<li><Link to='/books/000'>Starlow Wierdword</Link></li>
-				<li><Link to='/books/000'>Fiora Hellsword</Link></li>
-				<li><Link to='/books/000'>Zoltan Bluebeard</Link></li>
+				<Link to='/books/000'>
+					<li>
+						<h2>Starlow Wierdword</h2>
+						<p>Level 4 Human Fighter</p>
+					</li>
+				</Link>
+				<Link to='/books/000'>
+					<li>
+						<h2>Fiora Hellsword</h2>
+						<p>Level 8 Minotaur Barbarian</p>
+					</li>
+				</Link>
+				<Link to='/books/000'>
+					<li>
+						<h2>Zoltan Bluebeard</h2>
+						<p>Level 2 Human Wizard</p>
+					</li>
+				</Link>
 			</ul>
-			<Link to='/books/new' tabIndex='0' className='button'>Create New</Link>
+			<div>
+				<Link to='/books/new' tabIndex='0' className='button'>
+					New Spellbook
+				</Link>
+			</div>
 		</div>
 	)
 }
