@@ -7,8 +7,8 @@ import Navbar from './navbar.jsx'
 // define component item
 const Spellbooks = () => {
 	return (
-		<div>
-			<h1 class='branding'>Logo Font</h1>
+		<div className='base'>
+			<h1 className='branding'>Logo Font</h1>
 			<Navbar />
 			<h1>About</h1>
 			<p>I created this app for a few reasons. One, because the D&amp;D community needs more good free open source. Two, to test out Progressive Web Apps in the Google Play Store. Three, because I want to highly customize this app to work with my convoluted homebrews.</p>
@@ -26,7 +26,6 @@ const Spellbooks = () => {
 				<li> Listing items.</li>
 				<li> Listing items.</li>
 			</ol>
-
 		</div>
 	)
 }

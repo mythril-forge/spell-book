@@ -8,14 +8,17 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faDAndD } from '@fortawesome/free-brands-svg-icons'
 
-
 // import components
 import Splash from './splash.jsx'
 import About from './about.jsx'
-import Spellbooks from './spellbooks.jsx'
-import NewSpellbook from './spellbooks-new.jsx'
-import ShowSpellbook from './spellbooks-show.jsx'
-import EditSpellbook from './spellbooks-edit.jsx'
+// spellbooks
+import Spellbooks from './spellbooks/spellbooks.jsx'
+import NewSpellbook from './spellbooks/spellbooks-new.jsx'
+import ShowSpellbook from './spellbooks/spellbooks-show.jsx'
+import EditSpellbook from './spellbooks/spellbooks-edit.jsx'
+// spells
+import Spells from './spells/spells.jsx'
+import ShowSpell from './spells/spells-show.jsx'
 
 // import other local assets
 import '../css/app.css'
@@ -32,13 +35,15 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<div>
+				<div className='base'>
 					<Route exact path='/' component={Splash} />
 					<Route exact path='/about' component={About} />
 					<Route exact path='/books' component={Spellbooks} />
 					<Route exact path='/books/new' component={NewSpellbook} />
 					<Route exact path='/books/000' component={ShowSpellbook} />
 					<Route exact path='/books/000/edit' component={EditSpellbook} />
+					<Route exact path='/spells' component={Spells} />
+					<Route exact path='/spells/000' component={ShowSpell} />
 				</div>
 			</Router>
 		)

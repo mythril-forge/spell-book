@@ -4,12 +4,12 @@ import React from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 // import components
-import Navbar from './navbar.jsx'
+import Navbar from '../navbar.jsx'
 
 // define component item
 const ShowSpellbook = () => {
 	return (
-		<div>
+		<div className='base'>
 			<Navbar />
 			<h1>Spellbook</h1>
 			<h2>Lorem Ipsum</h2>

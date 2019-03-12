@@ -12,7 +12,7 @@ import github from '../img/github.svg'
 // define component item
 const Splash = () => {
 	return (
-		<div>
+		<div className='base'>
 
 			<div id='hero' />
 

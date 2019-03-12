@@ -4,7 +4,7 @@ import React, {Component} from 'react'
 import { BrowserRouter as Router, Redirect } from 'react-router-dom'
 
 // import components
-import Navbar from './navbar.jsx'
+import Navbar from '../navbar.jsx'
 
 // define component item
 class EditSpellbook extends Component {
@@ -26,7 +26,7 @@ class EditSpellbook extends Component {
 		}
 
 		return (
-			<div>
+			<div className='base'>
 				<Navbar />
 				<h1>Edit Spellbook</h1>
 				<form>
